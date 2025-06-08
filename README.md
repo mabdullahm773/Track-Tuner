@@ -26,3 +26,7 @@ Track Tuner is a desktop media player built with C++ Builder. It supports multip
 1. Press F9 or click Run in C++ Builder
 2. After starting the app, a window will pop up asking you to select the folder containing your songs (e.g., *D:\songs*)
 3. Choose your music folder and start enjoying your music!
+
+
+>![Track Tuner Screenshot 1](Media_Player_Screenshot/track_tuner_1.png)
+>![Track Tuner Screenshot 2](Media_Player_Screenshot/track_tuner_2.png)
