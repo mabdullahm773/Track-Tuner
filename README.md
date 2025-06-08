@@ -28,4 +28,7 @@ Track Tuner is a desktop media player built with C++ Builder. It supports multip
 3. Choose your music folder and start enjoying your music!
 
 
+
+
+
 ![Track Tuner 1](MediaPlayer_ScreenShot/track_tuner_1.png)
