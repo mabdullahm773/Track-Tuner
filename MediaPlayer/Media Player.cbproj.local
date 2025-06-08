@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/12/20 15:33:08.000.057,=D:\RAD\Unit2.cpp</Transaction>
+    <Transaction>2023/12/20 15:33:08.000.222,=D:\RAD\Project3PCH1.h</Transaction>
+    <Transaction>2023/12/20 15:33:42.000.317,D:\RAD\Unit2.fmx=D:\RAD\MediaPlayer\Unit2.fmx</Transaction>
+    <Transaction>2023/12/20 15:33:42.000.402,D:\RAD\Project3PCH1.h=D:\RAD\MediaPlayer\Media PlayerPCH1.h</Transaction>
+    <Transaction>2023/12/20 15:33:42.000.505,D:\RAD\Project3.cbproj=D:\RAD\MediaPlayer\Media Player.cbproj</Transaction>
+    <Transaction>2023/12/20 15:33:42.000.317,D:\RAD\Unit2.cpp=D:\RAD\MediaPlayer\Unit2.cpp</Transaction>
+    <Transaction>2023/12/20 15:33:42.000.317,D:\RAD\Unit2.h=D:\RAD\MediaPlayer\Unit2.h</Transaction>
+    <Transaction>2023/12/20 15:33:49.000.951,D:\RAD\MediaPlayer\Media Player.cbproj=D:\RAD\MediaPlayer\Media Player.cbproj</Transaction>
+    <Transaction>2023/12/20 15:34:09.000.131,D:\RAD\MediaPlayer\Unit2.fmx=D:\RAD\MediaPlayer\Unit4.fmx</Transaction>
+    <Transaction>2023/12/20 15:34:09.000.131,D:\RAD\MediaPlayer\Unit2.cpp=D:\RAD\MediaPlayer\Unit4.cpp</Transaction>
+    <Transaction>2023/12/20 15:34:09.000.131,D:\RAD\MediaPlayer\Unit2.h=D:\RAD\MediaPlayer\Unit4.h</Transaction>
+    <Transaction>2023/12/20 16:02:58.000.495,=D:\RAD\MediaPlayer\Unit1.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

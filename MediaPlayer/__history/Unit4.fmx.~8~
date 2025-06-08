@@ -1,0 +1,147 @@
+object Form4: TForm4
+  Tag = 18
+  Left = 0
+  Top = 0
+  Caption = 'ButtonPlayPause'
+  ClientHeight = 456
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Show: TButton
+    Position.X = 500.000000000000000000
+    Position.Y = 376.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Show'
+    OnClick = ShowClick
+  end
+  object ListBox1: TListBox
+    Position.X = 32.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 305.000000000000000000
+    Size.Height = 385.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnItemClick = ListBox1ItemClick
+    Viewport.Width = 301.000000000000000000
+    Viewport.Height = 381.000000000000000000
+  end
+  object Volume: TLabel
+    Position.X = 512.000000000000000000
+    Position.Y = 75.000000000000000000
+    Text = 'VOLUME'
+    TabOrder = 5
+  end
+  object Label2: TLabel
+    Position.X = 585.000000000000000000
+    Position.Y = 163.000000000000000000
+    Size.Width = 33.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = '-'
+    TabOrder = 4
+  end
+  object Label3: TLabel
+    Position.X = 585.000000000000000000
+    Position.Y = 59.000000000000000000
+    Size.Width = 24.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = '+'
+    TabOrder = 3
+  end
+  object MediaPlayer1: TMediaPlayer
+    Left = 392
+    Top = 32
+  end
+  object TrackBar2: TTrackBar
+    CanParentFocus = True
+    Cursor = crHandPoint
+    Orientation = Horizontal
+    Position.X = 401.000000000000000000
+    Position.Y = 256.000000000000000000
+    Size.Width = 188.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    OnChange = TrackBar2Change
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 384
+    Top = 40
+  end
+  object ButtonBackward: TButton
+    Position.X = 448.000000000000000000
+    Position.Y = 283.000000000000000000
+    Size.Width = 24.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 14
+    Text = '<-'
+    OnClick = ButtonBackwardClick
+  end
+  object ButtonForward: TButton
+    Position.X = 520.000000000000000000
+    Position.Y = 283.000000000000000000
+    Size.Width = 24.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+    Text = 'Button2'
+    OnClick = ButtonForwardClick
+  end
+  object ButtonPlayPause: TButton
+    Position.X = 480.000000000000000000
+    Position.Y = 283.000000000000000000
+    Size.Width = 32.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    Text = 'Stop/Play'
+    OnClick = ButtonPlayPauseClick
+  end
+  object TrackBar1: TTrackBar
+    CanParentFocus = True
+    Orientation = Vertical
+    Position.X = 594.000000000000000000
+    Position.Y = 64.000000000000000000
+    RotationAngle = 180.000000000000000000
+    Size.Width = 19.000000000000000000
+    Size.Height = 115.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 18
+    Value = 100.000000000000000000
+  end
+  object song_name: TLabel
+    Position.X = 413.000000000000000000
+    Position.Y = 231.000000000000000000
+    Size.Width = 164.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 19
+  end
+  object ButtonLoop: TButton
+    Position.X = 408.000000000000000000
+    Position.Y = 283.000000000000000000
+    Size.Width = 32.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 21
+    Text = 'Loop'
+  end
+  object ImageList: TImageList
+    Source = <>
+    Destination = <>
+    Left = 400
+    Top = 24
+  end
+end

@@ -1,0 +1,186 @@
+object Form4: TForm4
+  Tag = 18
+  Left = 0
+  Top = 0
+  Caption = 'ButtonPlayPause'
+  ClientHeight = 550
+  ClientWidth = 747
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Show: TButton
+    Position.X = 261.000000000000000000
+    Position.Y = 494.000000000000000000
+    Size.Width = 65.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Show'
+    OnClick = ShowClick
+  end
+  object ListBox1: TListBox
+    Position.X = 32.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 265.000000000000000000
+    Size.Height = 500.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnItemClick = ListBox1ItemClick
+    Viewport.Width = 261.000000000000000000
+    Viewport.Height = 496.000000000000000000
+  end
+  object MediaPlayer1: TMediaPlayer
+    Left = 648
+    Top = 16
+  end
+  object TrackBar2: TTrackBar
+    CanParentFocus = True
+    Cursor = crHandPoint
+    Orientation = Horizontal
+    Position.X = 335.000000000000000000
+    Position.Y = 424.000000000000000000
+    Size.Width = 355.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    OnChange = TrackBar2Change
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 664
+    Top = 24
+  end
+  object ButtonBackward: TButton
+    Position.X = 466.000000000000000000
+    Position.Y = 459.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    Text = '<<-'
+    OnClick = ButtonBackwardClick
+  end
+  object ButtonForward: TButton
+    Position.X = 550.000000000000000000
+    Position.Y = 459.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Text = '->>'
+    OnClick = ButtonForwardClick
+  end
+  object TrackBar1: TTrackBar
+    CanParentFocus = True
+    Orientation = Vertical
+    Position.X = 709.000000000000000000
+    Position.Y = 182.000000000000000000
+    RotationAngle = 180.000000000000000000
+    Size.Width = 19.000000000000000000
+    Size.Height = 179.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 16
+    Value = 100.000000000000000000
+  end
+  object song_name: TLabel
+    Position.X = 368.000000000000000000
+    Position.Y = 383.000000000000000000
+    Size.Width = 314.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 17
+  end
+  object ButtonLoop: TButton
+    Position.X = 387.000000000000000000
+    Position.Y = 461.000000000000000000
+    Size.Width = 28.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 19
+    Text = 'Loop'
+    OnClick = ButtonLoopClick
+  end
+  object ButtonPlayPause: TButton
+    Position.X = 504.000000000000000000
+    Position.Y = 459.000000000000000000
+    Size.Width = 38.000000000000000000
+    Size.Height = 38.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 23
+    Text = '> |'
+    OnClick = ButtonPlayPauseClick
+  end
+  object ButtonMuteVol: TButton
+    Position.X = 707.000000000000000000
+    Position.Y = 382.000000000000000000
+    Size.Width = 18.000000000000000000
+    Size.Height = 18.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 26
+    Text = '-'
+    OnClick = ButtonMuteVolClick
+    OnDblClick = ButtonMuteVolDoubleClick
+  end
+  object ButtonFullVol: TButton
+    Position.X = 707.000000000000000000
+    Position.Y = 147.000000000000000000
+    Size.Width = 18.000000000000000000
+    Size.Height = 18.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 28
+    Text = '+'
+    OnClick = ButtonFullVolClick
+    OnDblClick = ButtonFullVolDoubleClick
+  end
+  object ButtonBack30: TButton
+    Position.X = 433.000000000000000000
+    Position.Y = 459.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    Text = '30'
+    OnClick = ButtonBack30Click
+  end
+  object ButtonForward30: TButton
+    Position.X = 588.000000000000000000
+    Position.Y = 459.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Text = '30'
+    OnClick = ButtonForward30Click
+  end
+  object ButtonShuffle: TButton
+    Position.X = 630.000000000000000000
+    Position.Y = 461.000000000000000000
+    Size.Width = 28.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 29
+    Text = 'Shuffle'
+    OnClick = ButtonShuffleClick
+  end
+  object Image1: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 328.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 371.000000000000000000
+    Size.Height = 360.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ImageList: TImageList
+    Source = <>
+    Destination = <>
+    Left = 680
+    Top = 32
+  end
+end

@@ -1,0 +1,281 @@
+object Form4: TForm4
+  Tag = 18
+  Left = 0
+  Top = 0
+  Caption = 'Media Player'
+  ClientHeight = 573
+  ClientWidth = 869
+  Cursor = crArrow
+  Fill.Color = xFF1C4965
+  Fill.Kind = Solid
+  Position = DesktopCenter
+  StyleLookup = 'calloutpanelstyle'
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ListBox1: TListBox
+    Cursor = crHandPoint
+    Position.X = 76.000000000000000000
+    Position.Y = 46.000000000000000000
+    Size.Width = 193.000000000000000000
+    Size.Height = 393.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Visible = False
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnItemClick = ListBox1ItemClick
+    Viewport.Width = 189.000000000000000000
+    Viewport.Height = 389.000000000000000000
+  end
+  object MediaPlayer1: TMediaPlayer
+    Left = 648
+    Top = 32
+  end
+  object TrackBar2: TTrackBar
+    CanParentFocus = True
+    Cursor = crHandPoint
+    Locked = True
+    Orientation = Horizontal
+    Position.X = 76.000000000000000000
+    Position.Y = 472.000000000000000000
+    Size.Width = 768.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Visible = False
+    OnChange = TrackBar2Change
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 664
+    Top = 40
+  end
+  object ButtonBackward: TButton
+    Cursor = crHandPoint
+    Locked = True
+    Position.X = 386.000000000000000000
+    Position.Y = 499.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 35.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    Text = '<<-'
+    Visible = False
+    OnClick = ButtonBackwardClick
+  end
+  object ButtonForward: TButton
+    Cursor = crHandPoint
+    Locked = True
+    Position.X = 494.000000000000000000
+    Position.Y = 499.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 35.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Text = '->>'
+    Visible = False
+    OnClick = ButtonForwardClick
+  end
+  object TrackBar1: TTrackBar
+    CanParentFocus = True
+    Cursor = crSizeNS
+    Locked = True
+    Orientation = Vertical
+    Position.X = 30.000000000000000000
+    Position.Y = 210.000000000000000000
+    RotationAngle = 180.000000000000000000
+    Size.Width = 19.000000000000000000
+    Size.Height = 223.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 16
+    Value = 100.000000000000000000
+    Visible = False
+  end
+  object song_name: TLabel
+    StyledSettings = [Family, Size, Style]
+    Locked = True
+    Position.X = 92.000000000000000000
+    Position.Y = 447.000000000000000000
+    Size.Width = 733.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 17
+  end
+  object ButtonLoop: TButton
+    Cursor = crHandPoint
+    Locked = True
+    Position.X = 283.000000000000000000
+    Position.Y = 499.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 19
+    Text = 'Loop'
+    Visible = False
+    OnClick = ButtonLoopClick
+  end
+  object ButtonPlayPause: TButton
+    Cursor = crHandPoint
+    Locked = True
+    Position.X = 436.000000000000000000
+    Position.Y = 499.000000000000000000
+    Size.Width = 42.000000000000000000
+    Size.Height = 42.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 23
+    Text = '> |'
+    Visible = False
+    OnClick = ButtonPlayPauseClick
+  end
+  object ButtonMuteVol: TButton
+    Locked = True
+    Position.X = 8.000000000000000000
+    Position.Y = 402.000000000000000000
+    Size.Width = 18.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 26
+    Text = '-'
+    Visible = False
+    OnClick = ButtonMuteVolClick
+    OnDblClick = ButtonMuteVolDoubleClick
+  end
+  object ButtonFullVol: TButton
+    Locked = True
+    Position.X = 8.000000000000000000
+    Position.Y = 223.000000000000000000
+    Size.Width = 18.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 28
+    Text = '+'
+    Visible = False
+    OnClick = ButtonFullVolClick
+    OnDblClick = ButtonFullVolDoubleClick
+  end
+  object ButtonBack15: TButton
+    Cursor = crHandPoint
+    Locked = True
+    Position.X = 337.000000000000000000
+    Position.Y = 499.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    Text = '<-15'
+    Visible = False
+    OnClick = ButtonBack15Click
+  end
+  object ButtonForward15: TButton
+    Cursor = crHandPoint
+    Locked = True
+    Position.X = 552.000000000000000000
+    Position.Y = 499.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Text = '15->'
+    Visible = False
+    OnClick = ButtonForward15Click
+  end
+  object ButtonShuffle: TButton
+    Cursor = crHandPoint
+    Locked = True
+    Position.X = 606.000000000000000000
+    Position.Y = 499.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 29
+    Text = 'Shuffle'
+    Visible = False
+    OnClick = ButtonShuffleClick
+  end
+  object BackgroundImage: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Cursor = crNo
+    Locked = True
+    Position.X = 297.000000000000000000
+    Position.Y = 46.000000000000000000
+    Size.Width = 547.000000000000000000
+    Size.Height = 393.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object IconImage: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Cursor = crNo
+    Locked = True
+    Position.X = 18.000000000000000000
+    Position.Y = 456.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+  end
+  object MediaPlayerName: TLabel
+    StyleName = 'TRACK TUNER'
+    StyledSettings = [Family]
+    Locked = True
+    Position.X = 386.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 193.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'listboxheaderlabel'
+    Text = 'TRACK TUNER'
+    Visible = False
+    TabOrder = 35
+  end
+  object Directory: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    StyleLookup = 'clearingeditstyle'
+    TabOrder = 36
+    Cursor = crHelp
+    Position.X = 240.000000000000000000
+    Position.Y = 256.000000000000000000
+    Hint = 'C:\\Your\\Songs\\Directory'
+    HelpType = htKeyword
+    Size.Width = 353.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Style, FontColor]
+  end
+  object LabelDirectory: TLabel
+    StyledSettings = [Family, Size, Style]
+    Locked = True
+    Position.X = 264.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 361.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'listboxheaderlabel'
+    Text = 'ENTER DIRECTORY OF SONG FOLDER'
+    TabOrder = 37
+  end
+  object Find: TButton
+    Position.X = 601.000000000000000000
+    Position.Y = 256.000000000000000000
+    Size.Width = 65.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Find'
+    OnClick = FindClick
+  end
+  object ImageList: TImageList
+    Source = <>
+    Destination = <>
+    Left = 680
+    Top = 48
+  end
+end

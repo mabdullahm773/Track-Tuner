@@ -1,0 +1,99 @@
+#ifndef Unit4H
+#define Unit4H
+
+#include <System.Classes.hpp>
+#include <FMX.Controls.hpp>
+#include <FMX.Forms.hpp>
+#include <FMX.Controls.Presentation.hpp>
+#include <FMX.Layouts.hpp>
+#include <FMX.ListBox.hpp>
+#include <FMX.Media.hpp>
+#include <FMX.StdCtrls.hpp>
+#include <FMX.Types.hpp>
+#include <FMX.Ani.hpp>
+#include <FMX.Objects.hpp>
+#include <FMX.ImgList.hpp>
+#include <System.ImageList.hpp>
+#include <FMX.ExtCtrls.hpp>
+#include <FMX.Edit.hpp>
+
+class TForm4 : public TForm
+{
+__published:
+
+	// IDE-managed Components
+	TListBox *ListBox1;
+	TButton *Find;
+	TMediaPlayer *MediaPlayer1;
+	TTimer *Timer1;
+	TButton *ButtonBackward;
+	TButton *ButtonForward;
+	TImageList *ImageList;
+	TTrackBar *TrackBar1;
+	TTrackBar *TrackBar2;
+	TLabel *song_name;
+	TButton *ButtonLoop;
+	TButton *ButtonPlayPause;
+	TButton *ButtonMuteVol;
+	TButton *ButtonFullVol;
+	TButton *ButtonBack15;
+	TButton *ButtonForward15;
+	TButton *ButtonShuffle;
+	TImage *BackgroundImage;
+	TImage *IconImage;
+	TLabel *MediaPlayerName;
+	TEdit *Directory;
+	TLabel *LabelDirectory;
+
+	void __fastcall MediaPlayer1Time(TObject *Sender, const TMediaTime ATime, const TMediaTime ADuration);
+	void __fastcall PlayNextSong();
+	void __fastcall MediaPlayer1CurrentTime(TObject *Sender, double ATime);
+	void __fastcall FindClick(TObject *Sender);
+	void __fastcall ListBox1ItemClick(TCustomListBox *const Sender, TListBoxItem *const Item);
+	void __fastcall Timer1Timer(TObject *Sender);
+	void __fastcall TrackBar2Change(TObject *Sender);
+	void __fastcall ButtonPlayPauseClick(TObject *Sender);
+	void __fastcall ButtonBackwardClick(TObject *Sender);
+	void __fastcall ButtonForwardClick(TObject *Sender);
+	void __fastcall UpdateSongNameLabel();
+	void __fastcall ButtonLoopClick(TObject *Sender);
+	void __fastcall PlaySameSong();
+	void __fastcall ButtonFullVolClick(TObject *Sender);
+	void __fastcall ButtonMuteVolClick(TObject *Sender);
+	void __fastcall ButtonFullVolDoubleClick(TObject *Sender);
+	void __fastcall ButtonMuteVolDoubleClick(TObject *Sender);
+	void __fastcall ButtonBack15Click(TObject *Sender);
+	void __fastcall ButtonForward15Click(TObject *Sender);
+	void __fastcall ButtonShuffleClick(TObject *Sender);
+
+
+private:
+
+	// User declarations
+	TTimer *TimerLoopCheck;
+	AnsiString FPlayingSongName;
+	AnsiString FolderDirectory;
+
+	bool CheckStop;
+	bool CheckLoop;
+	bool CheckShuffle;
+	bool FLoopEnabled;
+	bool FShouldUpdateVolume;
+	bool VolForward;
+	bool VolBackward;
+
+	void __fastcall TrackBar1Change(TObject *Sender);
+	void __fastcall PopulateListBoxWithSongs();
+	void __fastcall PlaySelectedSong();
+	void __fastcall SetupButtonImages();
+
+
+public:
+
+	// User declarations
+	__fastcall TForm4(TComponent *Owner);
+
+};
+
+#endif
+

@@ -1,0 +1,203 @@
+object Form4: TForm4
+  Tag = 18
+  Left = 0
+  Top = 0
+  Caption = 'ButtonPlayPause'
+  ClientHeight = 550
+  ClientWidth = 730
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Show: TButton
+    Position.X = 609.000000000000000000
+    Position.Y = 247.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Show'
+    OnClick = ShowClick
+  end
+  object ListBox1: TListBox
+    Position.X = 32.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 297.000000000000000000
+    Size.Height = 465.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnItemClick = ListBox1ItemClick
+    Viewport.Width = 293.000000000000000000
+    Viewport.Height = 461.000000000000000000
+  end
+  object Volume: TLabel
+    Position.X = 543.000000000000000000
+    Position.Y = 91.000000000000000000
+    Size.Width = 33.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'VOL'
+    TabOrder = 3
+  end
+  object MediaPlayer1: TMediaPlayer
+    Left = 360
+    Top = 16
+  end
+  object TrackBar2: TTrackBar
+    CanParentFocus = True
+    Cursor = crHandPoint
+    Orientation = Horizontal
+    Position.X = 368.000000000000000000
+    Position.Y = 464.000000000000000000
+    Size.Width = 341.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    OnChange = TrackBar2Change
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 376
+    Top = 24
+  end
+  object ButtonBackward: TButton
+    Position.X = 496.000000000000000000
+    Position.Y = 491.000000000000000000
+    Size.Width = 24.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+    Text = '<-'
+    OnClick = ButtonBackwardClick
+  end
+  object ButtonForward: TButton
+    Position.X = 568.000000000000000000
+    Position.Y = 491.000000000000000000
+    Size.Width = 24.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Text = 'Button2'
+    OnClick = ButtonForwardClick
+  end
+  object TrackBar1: TTrackBar
+    CanParentFocus = True
+    Orientation = Vertical
+    Position.X = 568.000000000000000000
+    Position.Y = 35.000000000000000000
+    RotationAngle = 180.000000000000000000
+    Size.Width = 19.000000000000000000
+    Size.Height = 120.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 17
+    Value = 100.000000000000000000
+  end
+  object song_name: TLabel
+    Position.X = 384.000000000000000000
+    Position.Y = 439.000000000000000000
+    Size.Width = 314.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 18
+  end
+  object ButtonLoop: TButton
+    Position.X = 395.000000000000000000
+    Position.Y = 491.000000000000000000
+    Size.Width = 39.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 20
+    Text = 'Loop'
+    OnClick = ButtonLoopClick
+  end
+  object ButtonPlayPause: TButton
+    Position.X = 528.000000000000000000
+    Position.Y = 491.000000000000000000
+    Size.Width = 33.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 24
+    Text = 'P/S'
+    OnClick = ButtonPlayPauseClick
+  end
+  object ButtonMuteVol: TButton
+    Position.X = 543.000000000000000000
+    Position.Y = 129.000000000000000000
+    Size.Width = 18.000000000000000000
+    Size.Height = 18.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 27
+    Text = '-'
+    OnClick = ButtonMuteVolClick
+    OnDblClick = ButtonMuteVolDoubleClick
+  end
+  object ButtonFullVol: TButton
+    Position.X = 543.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 18.000000000000000000
+    Size.Height = 18.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 29
+    Text = '+'
+    OnClick = ButtonFullVolClick
+    OnDblClick = ButtonFullVolDoubleClick
+  end
+  object ButtonBack30: TButton
+    Position.X = 468.000000000000000000
+    Position.Y = 491.000000000000000000
+    Size.Width = 20.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    Text = '<-'
+    OnClick = ButtonBack30Click
+  end
+  object ButtonForward30: TButton
+    Position.X = 600.000000000000000000
+    Position.Y = 491.000000000000000000
+    Size.Width = 20.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    Text = '<-'
+    OnClick = ButtonForward30Click
+  end
+  object MediaPlayerControl: TMediaPlayerControl
+    Position.X = 384.000000000000000000
+    Position.Y = 80.000000000000000000
+  end
+  object ButtonShuffle: TButton
+    Position.X = 651.000000000000000000
+    Position.Y = 491.000000000000000000
+    Size.Width = 47.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 31
+    Text = 'Shuffle'
+    OnClick = ButtonShuffleClick
+  end
+  object TemporaryTListBox: TListBox
+    Position.X = 129.000000000000000000
+    Position.Y = 138.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 351.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 32
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 196.000000000000000000
+    Viewport.Height = 347.000000000000000000
+  end
+  object ImageList: TImageList
+    Source = <>
+    Destination = <>
+    Left = 392
+    Top = 32
+  end
+end
