@@ -6,7 +6,7 @@ Track Tuner is a desktop media player built with C++ Builder. It supports multip
 ✅ Basic understanding of C++ (optional, for modifications)
 
 ## 🚀 Setup Guide
-###1. 💾 Install C++ Builder
+### 1. 💾 Install C++ Builder
 1. Download from https://www.embarcadero.com/products/cbuilder
 2. Install and set up the IDE (Community Edition is free)
 
